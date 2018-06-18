@@ -14,22 +14,22 @@ public class WelcomePage extends AppCompatActivity {
     /** Called when the user taps the button */
     public void logout(View view) {
         // Do something in response to button
-        Intent startNewActivity = new Intent(this, MainActivity.class);
+        Intent startNewActivity = new Intent(this, LoginActivity.class);
         startActivity(startNewActivity);
     }
     public void goToRegisteredClasses(View view) {
         // Do something in response to button
-        Intent startNewActivity = new Intent(this, MainActivity.class);
+        Intent startNewActivity = new Intent(this, RegisteredClasses.class);
         startActivity(startNewActivity);
     }
     public void goToAcademicTimetable(View view) {
         // Do something in response to button
-        Intent startNewActivity = new Intent(this, MainActivity.class);
+        Intent startNewActivity = new Intent(this, AcademicTimetable.class);
         startActivity(startNewActivity);
     }
     public void goToSchedule(View view) {
         // Do something in response to button
-        Intent startNewActivity = new Intent(this, MainActivity.class);
+        Intent startNewActivity = new Intent(this, StudentSchedule.class);
         startActivity(startNewActivity);
     }
 }

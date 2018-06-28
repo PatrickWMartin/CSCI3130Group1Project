@@ -78,9 +78,7 @@ public class Course {
         return profEmail;
     }
 
-    public void setProfEmail(String profEmail) {
-        this.profEmail = profEmail;
-    }
+    public void setProfEmail(String profEmail) {this.profEmail = profEmail;}
 
     public String getSemester() {
         return semester;
@@ -100,15 +98,15 @@ public class Course {
 
 
     public String toString(){
-        String result = "Course Name: "+getName()+"/n" +
-                "Description: "+getDescription()+"/n" +
-                "Capacity: "+getCapacity()+"/n" +
-                "Location: "+getLocation()+"/n" +
-                "Prof: "+getProf()+"/n" +
-                "Prof Email: "+getProfEmail()+"/n" +
-                "Semester: "+getSemester()+"/n" +
-                "Time: "+getTime()+"/n" +
-                "Prerequisites: "+getPrerequisites()+"/n";
+        String result = "Course Name: "+getName()+"\n" +
+                "Description: "+getDescription()+"\n" +
+                "Capacity: "+getCapacity()+"\n" +
+                "Location: "+getLocation()+"\n" +
+                "Prof: "+getProf()+"\n" +
+                "Prof Email: "+getProfEmail()+"\n" +
+                "Semester: "+getSemester()+"\n" +
+                "Time: "+getTime()+"\n" +
+                "Prerequisites: "+getPrerequisites()+"\n";
         return result;
     }
 

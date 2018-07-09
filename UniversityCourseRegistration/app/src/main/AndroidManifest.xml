@@ -16,11 +16,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".WelcomePage">
-            <!--<intent-filter>
+
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter> -->
+            </intent-filter>
+            -->
 
         </activity>
         <activity
@@ -32,7 +35,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".RegisteredClasses"
+            android:label="@string/title_activity_registered_classes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Listview"
+            android:label="@string/title_activity_listview"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

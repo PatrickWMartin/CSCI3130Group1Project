@@ -23,6 +23,7 @@ public class WelcomePage extends AppCompatActivity {
     private FirebaseAuth auth;
     private DatabaseReference dbRef;
     private Button logoutBtn;
+    private Button activityRegistered;
     private String fName;
 
     @Override
@@ -44,7 +45,6 @@ public class WelcomePage extends AppCompatActivity {
                         welcomeText.setText("Welcome " +fName+ " to The University of Maximegalon Course Registration!");
                         Log.v("tmz", "" + students.child("First Name").getValue());
                     }
-
                 }
             }
 
@@ -62,11 +62,19 @@ public class WelcomePage extends AppCompatActivity {
                 System.exit(0);
             }
         });
+
+        activityRegistered = (Button) findViewById(R.id.registeredclasses);
+        activityRegistered.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToRegisteredClasses();
+            }
+        });
     }
     /** Called when the user taps the button */
-    public void goToRegisteredClasses(View view) {
+    public void goToRegisteredClasses() {
         // Do something in response to button
-        Intent startNewActivity = new Intent(this, MainActivity.class);
+        Intent startNewActivity = new Intent(this, RegisteredClasses.class);
         startActivity(startNewActivity);
     }
     public void goToAcademicTimetable(View view) {

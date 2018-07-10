@@ -40,12 +40,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static android.Manifest.permission.READ_CONTACTS;
+//ToDO FIX WHEN STRINGS ARE NULL
 
 public class LoginActivity extends AppCompatActivity {
     private EditText inEmail, inPass;
     private FirebaseAuth auth;
     private Button bLogIn;
-
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
